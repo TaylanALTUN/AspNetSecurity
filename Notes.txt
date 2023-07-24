@@ -1,0 +1,10 @@
+ASP.Net Core güvenlik
+güvenlik açýklarý 
+saldýrý yöntemleri
+korunmya yöntemleri
+
+
+Türleri :
+-----------------
+DataProtector : AspNetCore içinde
+Whitelist/Blacklist IP

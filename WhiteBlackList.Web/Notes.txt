@@ -1,0 +1,15 @@
+**WhiteList / BlackList IP**
+-----------------------------
+
+Uygulama seviyesinde - > middleware
+Controller / Method seviyesinde - > filter service
+
+Whitelist : sabit/belirli IPlerden app eriþimi
+BlackList : sabit/belirli IPlerden eriþim kýsýtý
+
+IPV4 : 16 bitlik olduðu için 4 milyar Ip adresi mevcut. Nesnelerin interneti yaygnlaþtýkça bu yetersizleþiyor. Localhost IP => 127.0.0.1
+IPV6 : 32 bitlik. Localhost IP => ::1 ('::' soltarafýn hepsimnin 0 olduðu anlamýna gelir )
+
+HttpContext : Hem AspNetMvc hem de AspNetCore üzerindeki tüm requestler responslar  HttpContext üzerinden gerçekleþir.
+
+Uygulama seviyesinde IPSafeMiddleWare isimli class ile yeni bir middleware eklendi. Uygulama ayaða kalktýðýnda arayagirebilmesi için  "app.UseMiddleware<IPSafeMiddleWare>()"  kodu ile tanýmlandý.

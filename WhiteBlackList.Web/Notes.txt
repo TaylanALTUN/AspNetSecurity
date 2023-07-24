@@ -12,4 +12,6 @@ IPV6 : 32 bitlik. Localhost IP => ::1 ('::' soltarafýn hepsimnin 0 olduðu anlamý
 
 HttpContext : Hem AspNetMvc hem de AspNetCore üzerindeki tüm requestler responslar  HttpContext üzerinden gerçekleþir.
 
-Uygulama seviyesinde IPSafeMiddleWare isimli class ile yeni bir middleware eklendi. Uygulama ayaða kalktýðýnda arayagirebilmesi için  "app.UseMiddleware<IPSafeMiddleWare>()"  kodu ile tanýmlandý.
+Uygulama seviyesinde =  IPSafeMiddleWare isimli class ile yeni bir middleware eklendi. Uygulama ayaða kalktýðýnda arayagirebilmesi için  "app.UseMiddleware<IPSafeMiddleWare>()"  kodu ile tanýmlandý.
+
+Controller / Method seviyesinde = CheckWhiteList isimli class ile yeni bir  filterattribute eklendi. Oluþturulan bu clas DI olarak eklendi. Bu sayede  iligli method üstünde filtre olarak eklenebilmesi saðlandý. Ýlgili method üstüne þu kod ile eklenebilmiekte==> [ServiceFilter(typeof(CheckWhiteList))].  [CheckWhiteList] þeklinde eklenebilmesi için constructerýnda parametre almamasý gerekir.

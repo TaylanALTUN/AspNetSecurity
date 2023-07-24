@@ -1,9 +1,12 @@
+using WhiteBlackList.Web.Filters;
 using WhiteBlackList.Web.MiddleWares;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // appsettings.json içindeki IPList alanýný IPList clasýna doldur.
 builder.Services.Configure<IPList>(builder.Configuration.GetSection("IPList"));
+
+builder.Services.AddScoped<CheckWhiteList>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

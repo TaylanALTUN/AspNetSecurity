@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CommentAdd</title>
+</head>
+<body>
+    <form method="post">
+        <input type="text" name="name" />
+        <br /><br />        
+        <textarea type="text" name="comment" ></textarea>
+        <br /><br />
+        <input type="submit" value="Gönder" />
+    </form>
+    <h1>Yorumlar</h1>
+
+    <strong>@ViewBag.name</strong>
+    <hr />
+    @*comment alanına yazılan script kodları çalışır hale geldi*@
+    <span>@Html.Raw(ViewBag.comment)</span>
+    <hr />
+    <hr />
+    <h1>Dosyadan Okunan Yorumlar</h1>
+    @if (ViewBag.comments != null)
+    {
+        foreach (var item in ViewBag.comments as string[])
+        {
+            <span>@Html.Raw(item)</span>
+            <hr />
+        }
+    }
+</body>
+</html>

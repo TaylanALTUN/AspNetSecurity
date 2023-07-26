@@ -27,7 +27,7 @@ builder.Services.AddCors(opts =>
 
     opts.AddPolicy("AllowSites2", builder =>
     {
-        builder.WithOrigins("https://www.example.com").WithMethods("POST", "GET").AllowAnyHeader();   
+        builder.WithOrigins("https://localhost:7090").WithMethods("POST", "GET").AllowAnyHeader();   
     });
 
 });

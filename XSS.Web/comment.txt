@@ -1,0 +1,8 @@
+Taylan-Yorum-1
+Taylan-Yorum-1
+Taylan-Yorum-1
+Taylan-Yorum-2
+
+Taylan Altun-<script>alert("Hello word!")</script> 
+<b>Yorumlar çok güzel</b>
+Cookie oku-<script>alert(document.cookie)</script>

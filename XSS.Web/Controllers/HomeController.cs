@@ -34,11 +34,14 @@ namespace XSS.Web.Controllers
             return View();
         }
 
+        // Antiforgery kontrolünü kaldırır
+        //[IgnoreAntiforgeryToken]
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult CommentAdd(string name, string comment)
         {
             //url de gönderilecekse gelen datayı url de zararsız hale getirir
-            _urlEncoder.Encode(name)
+            //string urlEncodeName=_urlEncoder.Encode(name);
           
             ViewBag.Name = name;
 

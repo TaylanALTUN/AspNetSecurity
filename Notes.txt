@@ -8,3 +8,4 @@ Türleri :
 -----------------
 DataProtector : AspNetCore içinde
 Whitelist/Blacklist IP
+Secret Protection : Secret manager tool

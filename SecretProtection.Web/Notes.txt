@@ -1,0 +1,9 @@
+**Secret Protection**
+-----------------------------
+
+Appseting içindeki aþaðýdaki bilgiler gibi hassas bilgileri canlýya atýlmamasý lazým. Secret Manager tool aracýlýðý ile bu bilgiler güvenli þekilde tutuluyor. 
+.ConnectionString
+.Token
+.Facebook/Google/Microsoft Client Id/Client Secret
+
+-Projeye sað týklanýp "Manage User Secrets"  butonu ile "secret.json" dosyasý açýlýr. secret.json dosyasý uygulamada deðil çalýþýlan bilgisayarda ayrý bir yerde tutuluyor (C:\Users\tayla\AppData\Roaming\Microsoft\UserSecrets). Ýlgili dizinde hangi dosya ilgili projede olduðunu tespit etmek için projeye sað týklanýr "Edit Project File" butonu ile açýlan sayfadadan klasör isimleri öðrenilebilir.

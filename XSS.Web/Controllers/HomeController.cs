@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Scripting;
 using System.Diagnostics;
+using System.Text.Encodings.Web;
 using XSS.Web.Models;
 
 namespace XSS.Web.Controllers
@@ -9,9 +10,16 @@ namespace XSS.Web.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private HtmlEncoder _htmlEncoder;
+        private JavaScriptEncoder _javascriptEncoder;
+        private UrlEncoder _urlEncoder;
+
+        public HomeController(ILogger<HomeController> logger, HtmlEncoder htmlEncoder, JavaScriptEncoder javascriptEncoder, UrlEncoder urlEncoder)
         {
             _logger = logger;
+            _htmlEncoder = htmlEncoder;
+            _javascriptEncoder = javascriptEncoder;
+            _urlEncoder = urlEncoder;
         }
 
         public IActionResult CommentAdd()
@@ -29,6 +37,8 @@ namespace XSS.Web.Controllers
         [HttpPost]
         public IActionResult CommentAdd(string name, string comment)
         {
+            //url de gönderilecekse gelen datayı url de zararsız hale getirir
+            _urlEncoder.Encode(name)
           
             ViewBag.Name = name;
 

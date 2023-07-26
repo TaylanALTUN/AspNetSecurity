@@ -3,16 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProtection.Web", "DataProtection.Web\DataProtection.Web.csproj", "{BA8AAF3F-A60E-4F90-ABF7-91F0198CD323}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataProtection.Web", "DataProtection.Web\DataProtection.Web.csproj", "{BA8AAF3F-A60E-4F90-ABF7-91F0198CD323}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteBlackList.Web", "WhiteBlackList.Web\WhiteBlackList.Web.csproj", "{D85511F0-90D9-4701-9AD5-E7EFE6F57D2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhiteBlackList.Web", "WhiteBlackList.Web\WhiteBlackList.Web.csproj", "{D85511F0-90D9-4701-9AD5-E7EFE6F57D2E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD36FA31-8019-463B-8A2B-B440161E0164}"
 	ProjectSection(SolutionItems) = preProject
 		Notes.txt = Notes.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecretProtection.Web", "SecretProtection.Web\SecretProtection.Web.csproj", "{0FB147A7-1A78-46AF-B6A5-77DF05579B2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecretProtection.Web", "SecretProtection.Web\SecretProtection.Web.csproj", "{0FB147A7-1A78-46AF-B6A5-77DF05579B2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeb.API", "MyWeb.API\MyWeb.API.csproj", "{B7AC4897-10A9-466B-84C3-4841F2C0E8EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeb.Web", "MyWeb.Web\MyWeb.Web.csproj", "{12049141-73F6-4F05-83D2-34F44372D92C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +36,14 @@ Global
 		{0FB147A7-1A78-46AF-B6A5-77DF05579B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FB147A7-1A78-46AF-B6A5-77DF05579B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FB147A7-1A78-46AF-B6A5-77DF05579B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7AC4897-10A9-466B-84C3-4841F2C0E8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7AC4897-10A9-466B-84C3-4841F2C0E8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7AC4897-10A9-466B-84C3-4841F2C0E8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7AC4897-10A9-466B-84C3-4841F2C0E8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12049141-73F6-4F05-83D2-34F44372D92C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12049141-73F6-4F05-83D2-34F44372D92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12049141-73F6-4F05-83D2-34F44372D92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12049141-73F6-4F05-83D2-34F44372D92C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
